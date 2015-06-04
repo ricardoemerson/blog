@@ -1,0 +1,59 @@
+pt-BR:
+  simple_form:
+    "yes": 'Sim'
+    "no": 'Não'
+    required:
+      text: 'required'
+      mark: '*'
+      # You can uncomment the line below if you need to overwrite the whole required html.
+      # When using html, text and mark won't be used.
+      # html: '<abbr title="required">*</abbr>'
+    error_notification:
+      default_message: 'Alguns erros foram encontrados, por favor verifique:'
+    # Labels and hints examples
+    # labels:
+    #   defaults:
+    #     password: 'Password'
+    #   user:
+    #     new:
+    #       email: 'E-mail to sign in.'
+    #     edit:
+    #       email: 'E-mail.'
+    # hints:
+    #   defaults:
+    #     username: 'User name to sign in.'
+    #     password: 'No special characters, please.'
+
+    # Definição de idioma para o controle de usuários.
+    labels:
+      user:
+        username: 'Nome do Usuário:'
+        password: 'Senha de Acesso:'
+        password_confirmation: 'Confirmação da Senha de Acesso:'
+        current_password: 'Senha Atual:'
+        remember_me: 'Lembrar-me'
+        email: 'e-Mail:'
+        full_name: 'Nome Completo:'
+        location: 'Cidade:'
+        bio: 'Biografia:'
+      post:
+        title: 'Titulo:'
+        content: 'Conteúdo:'
+      comment:
+        content: 'Comentário:'
+
+    placeholders:
+      user:
+        username: 'Informe o nome de usuário'
+        password: 'Informe a senha de acesso'
+        password_confirmation: 'Informe a confirmação da senha de acesso'
+        current_password: 'Informe a senha atual'
+        email: 'Informe o endereço de e-mail'
+        full_name: 'Informe o nome completo'
+        location: 'Informe nome da cidade'
+        bio: 'Informe a biografia'
+      post:
+        title: 'Informe o título'
+        content: 'Informe o conteúdo da postagem'
+      comment:
+        content: 'Informe o comentário'

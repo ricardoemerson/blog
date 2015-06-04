@@ -1,0 +1,7 @@
+pt-BR:
+  # Mensagem padrão de erro para o devise.
+  devise:
+    errors:
+      messages:
+        default: "Houve um erro em sua solicitação."
+

@@ -1,0 +1,28 @@
+#posts-container
+  .ui.blue.raised.segment.shadow
+    h3.ui.dividing.header Postagens
+    = semantic_flash
+
+    table.ui.striped.compact.table
+      thead
+        tr
+          th Título
+          th Conteúdo
+          th Usuário
+          th.three.wide.center.aligned Ações
+
+      tbody
+        - @posts.each do |post|
+          tr
+            td = truncate(post.title, length: 30, separator: ' ')
+            td = truncate(post.content, length: 50, separator: ' ')
+            td = post.user.full_name.split(" ")[0].titleize
+            td.center.aligned
+              |
+              = link_to content_tag(:i, nil, class: 'circular list alt icon') << ' ', post, data: { content: 'Consultar'}, class: 'ui-popup'
+              = link_to content_tag(:i, nil, class: 'circular edit icon') << ' ', edit_post_path(post), data: { content: 'Editar'}, class: 'ui-popup' if post.user == current_user
+              = link_to content_tag(:i, nil, class: 'circular remove icon'), post, method: :delete, data: { confirm: "Deseja excluir o post?", content: 'Excluir' }, class: 'ui-popup' if post.user == current_user
+
+    br
+
+    = link_to 'Nova Postagem', new_post_path, class: 'ui primary button pull-right'

@@ -1,0 +1,12 @@
+= simple_form_for(@post) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :title, autofocus: true
+    = f.input :content
+
+  .form-actions
+    = f.button :submit, class: 'ui primary button'
+    - unless @post.new_record?
+      = link_to 'Consultar', @post, class: 'ui teal button margin-left'
+    = link_to 'Voltar', posts_path, class: 'ui button margin-left'

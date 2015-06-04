@@ -1,0 +1,81 @@
+/* Corrige para que não apareça a barra de rolagem horizontal indevidamente. */
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 100%;
+}
+
+
+/* Adiciona um espaçamento no início do body para o conteúdo não ficar por baixo da navbar. */
+body {
+  padding-top: 25px;
+  -webkit-font-smoothing: antialiased; // Melhora a visualização dos textos e ícones.
+}
+
+
+/* Retira o caracter '*' da definição de campos obrigatórios do simple_form. */
+abbr[title="required"] {
+  display: none;
+}
+
+
+/* Classe para teste de área das divs. */
+.border {
+  border: 1px solid #333;
+}
+
+
+/* Corrige o posicionamento de aluguns elemntos após usar float left or right. */
+.clearfix {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+/* Margens para espaçamentos entre componentes. */
+.margin-left {
+	margin-left: 15px !important;
+}
+
+.margin-right {
+	margin-right: 15px !important;
+}
+
+
+/* Container principal da página para conteúdo do site. */
+#container {
+  margin: 35px 10px 10px 10px;
+}
+
+
+/* Alignment */
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+
+/* Transformation */
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+
+
+/* Configura o rodapé das páginas. */
+footer {
+  height:22px;
+  padding-top: 1px;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  @include gradient();
+}

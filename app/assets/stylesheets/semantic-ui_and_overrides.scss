@@ -1,0 +1,95 @@
+/*----------  Navbar  ----------*/
+
+/* Adiciona um efeito gradiente na barra de navegação principal.  */
+nav.ui.inverted.blue.menu {
+  border-bottom: 1px solid darken($blue, 15%);
+  border-left: 7px solid lighten($blue, 25%);
+}
+
+#navbar-title {
+  padding-top: 12px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.fix-menu {
+  display: inline-block !important;
+  width: 100%;
+  max-height: 48px !important;
+}
+
+/* Retira o caracter '*' da definição de campos obrigatórios. */
+.ui.form .required.fields > .field > label:after, .ui.form .required.field > label:after, .ui.form .required.fields > .field > .checkbox:after, .ui.form .required.field > .checkbox:after {
+  content: '';
+}
+
+
+/*----------  Windows Segment  ----------*/
+
+/* Adiciona uma sobra a toda janela criada com ui.raised.segment */
+.ui.segment.shadow {
+  border: 1px solid #ccc;
+  @include drop-shadow(3px, 3px, 5px, 0.3);
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .dividing {
+    border-bottom: 1px solid $blue;
+    margin-bottom: 15px;
+
+  }
+
+  .form-inputs {
+
+  }
+
+  .form-actions {
+    margin-top: 15px;
+    border-top: 1px solid $blue;
+    padding-top: 10px;
+  }
+}
+
+
+/* Remove o espaçamento existente na parte inferior de um objeto, como um segment. */
+.no-padding-bottom {
+   padding-bottom: 0 !important;
+}
+
+
+/* Remove a margem inferior de um objeto, como um field. */
+.no-margin-bottom {
+   margin-bottom: 0 !important;
+}
+
+
+/*----------  Button Icon  ----------*/
+
+/* Muda a opacidade dos ícones nos botões. */
+$iconOpacity: 1;
+$iconHoverOpacity: 1;
+$iconFocusOpacity: 1;
+
+.ui.button > .icon {
+  opacity: $iconOpacity;
+}
+
+.ui.button:hover .icon {
+  opacity: $iconHoverOpacity;
+}
+
+.ui.button:focus .icon {
+  opacity: $iconFocusOpacity;
+}
+
+
+/*----------  Dropdown Selection Component  ----------*/
+
+/* Muda a altura e centraliza o componente na linha. */
+.ui.dropdown.selection {
+  height: 35px !important;
+  vertical-align: middle;
+}

@@ -1,0 +1,19 @@
+#reset-password-container
+  .ui.blue.raised.segment.shadow
+    h3.ui.dividing.header Redefinir Senha de Acesso
+
+    = semantic_flash
+
+    = devise_error_messages!
+
+    / Formulário.
+    = simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+      = f.error_notification
+
+      .form-inputs
+        = f.input :email, required: true, autofocus: true
+
+      .form-actions
+        = f.button :submit, "Solicitar Nova Senha de Acesso", class: 'ui fluid primary button'
+
+    = render "users/shared/links"

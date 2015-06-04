@@ -1,0 +1,21 @@
+p#notice = notice
+
+p
+  strong Full name:
+  = @user.full_name
+p
+  strong Email:
+  = @user.email
+p
+  strong Password:
+  = @user.password
+p
+  strong Location:
+  = @user.location
+p
+  strong Bio:
+  = @user.bio
+
+= link_to 'Edit', edit_user_path(@user)
+'|
+= link_to 'Back', users_path
