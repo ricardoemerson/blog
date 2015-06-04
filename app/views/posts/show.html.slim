@@ -1,6 +1,6 @@
 #posts-container
   .ui.blue.raised.segment.shadow
-    h3.ui.dividing.header Consultar Post
+    h3.ui.dividing.header Consultar Postagem
     = semantic_flash
 
     p <strong>Título:</strong> #{@post.title}
@@ -30,9 +30,10 @@
           .form-actions
             = f.button :submit, "Adicionar Comentário", class: 'ui primary button' if user_signed_in?
             - if user_signed_in? &&  @post.user == current_user
-              = link_to 'Editar Post', edit_post_path(@post), class: 'ui teal button margin-left'
-            = link_to 'Voltar', :back, class: 'ui button margin-left'
+              = link_to 'Editar Postagem', edit_post_path(@post), class: 'ui teal button margin-left'
+            = link_to 'Lista de Postagens', posts_path, class: 'ui button margin-left'
+            = link_to 'Página Principal', root_path, class: 'ui button margin-left'
     - else
       .form-actions
-        = link_to 'Voltar', :back, class: 'ui button'
+        = link_to 'Página Principal', root_path, class: 'ui button'
 

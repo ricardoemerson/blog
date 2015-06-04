@@ -25,8 +25,5 @@
         = f.button :submit, "Atualizar", class: 'ui fluid primary button'
 
       .form-actions
-        h3 Cancelar Minha Conta
-
-        p Unhappy? #{link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Deseja cancelar sua conta?" }, method: :delete}
-
-    = link_to "Voltar", :back
+        =link_to "Cancelar Minha Conta", registration_path(resource_name), data: { confirm: "Deseja cancelar sua conta?" }, method: :delete, class: 'ui red button'
+        = link_to "Voltar", :back, class: 'ui button margin-left'

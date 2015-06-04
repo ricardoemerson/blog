@@ -2,6 +2,8 @@ pt-BR:
   activerecord:
     models:
       user: "Usuário"
+      post: "Postagem"
+      comment: "Comentário"
     attributes:
       user:
         email: "E-mail"
@@ -9,7 +11,5 @@ pt-BR:
       models:
         user:
           attributes:
-            cpf:
-              invalid: "O número do CPF informado é inválido"
             current_password:
               invalid: "A senha atual informada não é válida"

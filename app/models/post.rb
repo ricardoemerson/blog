@@ -12,7 +12,7 @@
 
 class Post < ActiveRecord::Base
   belongs_to :user
-  has_many :comments, -> { includes :user }
+  has_many :comments, -> { includes :user }, dependent: :delete_all
 
   scope :last_posts, -> { order(created_at: :desc) }
   validates :title, :content, presence: true

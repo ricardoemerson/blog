@@ -9,4 +9,5 @@
     = f.button :submit, class: 'ui primary button'
     - unless @post.new_record?
       = link_to 'Consultar', @post, class: 'ui teal button margin-left'
-    = link_to 'Voltar', posts_path, class: 'ui button margin-left'
+    = link_to 'Lista de Postagens', posts_path, class: 'ui button margin-left'
+    = link_to 'Página Principal', root_path, class: 'ui button margin-left'

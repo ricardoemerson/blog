@@ -25,8 +25,8 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable, :rememberable
   devise :database_authenticatable, :registerable,
          :recoverable, :trackable, :validatable
-  has_many :posts
-  has_many :comments
+  has_many :posts, dependent: :delete_all
+  has_many :comments, dependent: :delete_all
 
   EMAIL_REGEXP = /\A[^@]+@([^@\.]+\.)+[^@\.]+\z/
 
