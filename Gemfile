@@ -47,6 +47,7 @@ gem 'font-awesome-rails'
 gem 'active_link_to'
 gem 'kaminari'
 gem 'devise'
+gem 'ransack'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

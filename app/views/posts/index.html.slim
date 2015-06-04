@@ -3,6 +3,13 @@
     h3.ui.dividing.header Postagens
     = semantic_flash
 
+    .ui.segment
+      = search_form_for(@q, class: 'ui form') do |f|
+        .inline.field
+          = f.label :title_or_content_cont, "Pesquisar: "
+          = f.search_field :title_or_content_cont, size: 80, placeholder: 'Informe o conteúdo desejado para a pesquisa'
+          = f.submit "Pesquisar", name: nil, class: 'ui teal button margin-left'
+
     table.ui.striped.compact.table
       thead
         tr
