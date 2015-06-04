@@ -4,7 +4,7 @@
     = semantic_flash
 
     p <strong>Título:</strong> #{@post.title}
-    p <strong>Conteúdo:</strong> #{@post.content}
+    p <strong>Conteúdo:</strong> #{simple_format @post.content}
     p <strong>Por:</strong> #{@post.user.full_name.titleize} à #{time_ago_in_words @post.created_at}
 
     .ui.comments
