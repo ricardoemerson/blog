@@ -12,6 +12,6 @@ No aplicativo estão sendo utilizados vários plugins, onde dentre eles podemos 
 
 O Sistema permite que um usuário autenticado, crie postagens e faça comentários nas diversas postagens existentes.
 
-Regras de Negócio:
+**Regras de Negócio:**
 
 Além das validações dos campos, para não permitir cadastro de informações em branco, um usuário apenas pode editar e excluir as suas postagens.
