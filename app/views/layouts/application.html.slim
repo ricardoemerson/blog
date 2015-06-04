@@ -10,15 +10,20 @@ body
   nav.ui.inverted.blue.pointing.menu.fixed.top.fix-menu
     = link_to content_tag(:i, '', class: 'tasks icon') << 'Blog RoR - Principais notícias sobre Ruby on Rails', root_path, class: "item", id: 'navbar-title', active: :exclusive
     .right.menu
-      = link_to content_tag(:i, '', class: 'edit icon') << "Nova Postagem", new_post_path, class: "item", id: 'navbar-title'
-      = link_to content_tag(:i, '', class: 'newspaper icon') << "Postagens", posts_path, class: "item", id: 'navbar-title'
-      .ui.simple.dropdown.item#navbar-title
-        | #{content_tag(:i, '', class: 'user icon') << current_user.full_name.split(" ")[0].titleize}
-        i.dropdown.icon
-        .menu
-          = link_to content_tag(:i, '', class: 'edit icon') << "Editar Meus Dados", edit_user_registration_path, class: 'item'
-          .divider
-          = link_to content_tag(:i, '', class: 'sign out icon') << "Sair", destroy_user_session_path, method: :delete, data: { confirm: 'Deseja sair do sistema?'}, class: 'item'
+      - if user_signed_in?
+        = link_to content_tag(:i, '', class: 'edit icon') << "Nova Postagem", new_post_path, class: "item", id: 'navbar-title'
+        = link_to content_tag(:i, '', class: 'newspaper icon') << "Postagens", posts_path, class: "item", id: 'navbar-title'
+        .ui.simple.dropdown.item#navbar-title
+          | #{content_tag(:i, '', class: 'user icon') << current_user.full_name.split(" ")[0].titleize}
+          i.dropdown.icon
+          .menu
+            = link_to content_tag(:i, '', class: 'edit icon') << "Editar Meus Dados", edit_user_registration_path, class: 'item'
+            .divider
+            = link_to content_tag(:i, '', class: 'sign out icon') << "Sair", destroy_user_session_path, method: :delete, data: { confirm: 'Deseja sair do sistema?'}, class: 'item'
+      - else
+        = link_to content_tag(:i, '', class: 'edit icon') << "Registrar-se", new_user_registration_path, class: "item", id: 'navbar-title'
+        = link_to content_tag(:i, '', class: 'newspaper icon') << "Acessar", new_user_session_path, class: "item", id: 'navbar-title'
+
 
   / Sessão de conteúdo da página.
   section

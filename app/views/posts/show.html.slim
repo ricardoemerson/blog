@@ -7,27 +7,32 @@
     p <strong>Conteúdo:</strong> #{simple_format @post.content}
     p <strong>Por:</strong> #{@post.user.full_name.titleize} à #{time_ago_in_words @post.created_at}
 
-    .ui.comments
-      h3.ui.dividing.header Comentários
-      - @post.comments.each do |comment|
-        .comment
-          .content
-            span.author #{comment.user.full_name.split(" ")[0].titleize}
-            .metadata
-              span.date #{time_ago_in_words comment.created_at}
-            .text
-              | #{comment.content}
+    -unless @post.comments.empty?
+      .ui.comments
+        h3.ui.dividing.header Comentários
+        - @post.comments.each do |comment|
+          .comment
+            .content
+              span.author #{comment.user.full_name.split(" ")[0].titleize}
+              .metadata
+                span.date #{time_ago_in_words comment.created_at}
+              .text
+                | #{comment.content}
 
-    #comment-container
-      h3.ui.dividing.header Adicionar comentário:
-      = simple_form_for([@post, @post.comments.build]) do |f|
-        .form-inputs
-          = f.hidden_field :user_id, value: current_user.id
-          = f.input :content, autofocus: true
+    - if user_signed_in?
+      #comment-container
+        h3.ui.dividing.header Adicionar comentário:
+        = simple_form_for([@post, @post.comments.build]) do |f|
+          .form-inputs
+            = f.hidden_field :user_id, value: current_user.id
+            = f.input :content, autofocus: true
 
-        .form-actions
-          = f.button :submit, "Criar Comentário", class: 'ui primary button'
-          - if @post.user == current_user
-            = link_to 'Editar', edit_post_path(@post), class: 'ui teal button margin-left'
-          = link_to 'Voltar', posts_path, class: 'ui button margin-left'
+          .form-actions
+            = f.button :submit, "Adicionar Comentário", class: 'ui primary button' if user_signed_in?
+            - if user_signed_in? &&  @post.user == current_user
+              = link_to 'Editar Post', edit_post_path(@post), class: 'ui teal button margin-left'
+            = link_to 'Voltar', :back, class: 'ui button margin-left'
+    - else
+      .form-actions
+        = link_to 'Voltar', :back, class: 'ui button'
 

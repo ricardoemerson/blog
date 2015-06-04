@@ -15,7 +15,7 @@
                 .column
                   .ui.huge.message.grid
                     h1.ui.huge.header #{post.title}
-                    p #{truncate(post.content, length: 300, separator: ' ')}
+                    p #{simple_format truncate(post.content, length: 300, separator: ' ')}
                     = link_to "Ler mais &raquo;".html_safe, post, class: 'ui blue button'
                     .pull-right
                       .post-for
@@ -26,7 +26,7 @@
             .one.column.row
               .column
                 h2.ui.header #{post.title}
-                p #{truncate(post.content, length: 500, separator: ' ')}
+                p #{simple_format truncate(post.content, length: 500, separator: ' ')}
                 = link_to "Ler mais &raquo;".html_safe, post, class: 'ui tiny button'
                 .pull-right
                   .post-for

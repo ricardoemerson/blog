@@ -6,20 +6,8 @@ Rails.application.routes.draw do
       sign_up: 'register'
     }
 
-  devise_scope :user do
-    authenticated :user do
-      root 'home#index', as: :authenticated_root
-    end
-
-    unauthenticated do
-      root 'users/sessions#new', as: :unauthenticated_root
-    end
-  end
-
-  # Página principal do sistema.
   root 'home#index'
 
-  # resources :users
   resources :posts do
     resources :comments, only: :create
   end
