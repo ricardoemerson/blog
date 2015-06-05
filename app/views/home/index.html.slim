@@ -1,39 +1,41 @@
 .ui.page.grid
   .row
     .column
-      = semantic_flash
-      - if @posts.empty?
-        h2 Seja bem-vindo ao Blog RoR.
-        p Nenhuma postagem foi cadastrada.
-      - else
-        - cabecalho = true
-        - @posts.each do |post|
-          - if cabecalho
-            - cabecalho = false
-            .ui.grid
-              .row
+      .content-area
+        = semantic_flash
+        - if @posts.empty?
+          h2 Seja bem-vindo ao Blog RoR.
+          p Nenhuma postagem foi cadastrada.
+        - else
+          - cabecalho = true
+          - @posts.each do |post|
+            - if cabecalho
+              - cabecalho = false
+              .ui.grid
+                .row
+                  .column
+                    .ui.huge.message.grid
+                      h1.ui.huge.header #{post.title}
+                      p #{simple_format truncate(post.content, length: 300, separator: ' ')}
+                      = link_to "Ler mais &raquo;".html_safe, post, class: 'ui blue button'
+                      .pull-right
+                        .post-for
+                          | Publicado por: #{post.user.full_name.split(" ")[0].titleize} à #{time_ago_in_words post.created_at}
+              .ui.hidden.divider
+              .ui.page.grid
+            - else
+              .one.column.row
                 .column
-                  .ui.huge.message.grid
-                    h1.ui.huge.header #{post.title}
-                    p #{simple_format truncate(post.content, length: 300, separator: ' ')}
-                    = link_to "Ler mais &raquo;".html_safe, post, class: 'ui blue button'
-                    .pull-right
-                      .post-for
-                        | Publicado por: #{post.user.full_name.split(" ")[0].titleize} à #{time_ago_in_words post.created_at}
-            .ui.hidden.divider
-            .ui.page.grid
-          - else
-            .one.column.row
-              .column
-                h2.ui.header #{post.title}
-                p #{simple_format truncate(post.content, length: 500, separator: ' ')}
-                = link_to "Ler mais &raquo;".html_safe, post, class: 'ui tiny button'
-                .pull-right
-                  .post-for
-                    | Publicado por: #{post.user.full_name.split(" ")[0].titleize} à #{time_ago_in_words post.created_at}
-            .ui.divider
+                  h2.ui.header #{post.title}
+                  p #{simple_format truncate(post.content, length: 500, separator: ' ')}
+                  = link_to "Ler mais &raquo;".html_safe, post, class: 'ui tiny button'
+                  .pull-right
+                    .post-for
+                      | Publicado por: #{post.user.full_name.split(" ")[0].titleize} à #{time_ago_in_words post.created_at}
+              .ui.divider
 
-        .one.column.row
-          = paginate @posts
+          .one.column.row
+            = paginate @posts
+
 
 
