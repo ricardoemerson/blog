@@ -40,11 +40,9 @@ gem 'semantic-ui-sass'
 gem 'autoprefixer-rails'
 gem 'slim'
 gem 'slim-rails'
-gem 'erb_to_slim', group: :development
 gem 'simple_form'
 gem 'jquery-turbolinks'
 gem 'font-awesome-rails'
-gem 'active_link_to'
 gem 'kaminari'
 gem 'devise'
 gem 'ransack'
@@ -59,7 +57,7 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 
-  gem 'faker'
+  gem 'erb_to_slim'
   gem 'quiet_assets'
   gem 'annotate', '~> 2.6.6'
   gem 'awesome_print'
