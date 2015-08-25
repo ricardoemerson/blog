@@ -41,6 +41,8 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
+  config.action_mailer.delivery_method = :letter_opener
+
   # Indent html for pretty debugging and do not sort attributes
   Slim::Engine.set_options pretty: true, sort_attrs: false
 

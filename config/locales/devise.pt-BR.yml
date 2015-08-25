@@ -20,11 +20,11 @@ pt-BR:
       not_enabled: 'Sua conta está desativada.'
     mailer:
       confirmation_instructions:
-        subject: "%{app_short_name} - Instruções para confirmação da conta de usuário do sistema"
+        subject: "Blog RoR - Instruções para confirmação da conta de usuário do sistema"
       reset_password_instructions:
-        subject: "%{app_short_name} - Instruções para redefinir sua senha de acesso ao sistema"
+        subject: "Blog RoR - Instruções para redefinir sua senha de acesso ao sistema"
       unlock_instructions:
-        subject: "%{app_short_name} - Instruções para desbloquear sua senha de acesso ao sistema"
+        subject: "Blog RoR - Instruções para desbloquear sua senha de acesso ao sistema"
     omniauth_callbacks:
       failure: "Não pudemos autenticá-lo em %{kind} por causa de \"%{reason}\"."
       success: "Autenticado com sucesso na conta %{kind}."
