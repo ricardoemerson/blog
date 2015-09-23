@@ -12,6 +12,9 @@ Rails.application.routes.draw do
     resources :comments, only: :create
   end
 
+  # Fix to avoid route error and will redirect to root on wrong route addrees url.
+  get '*path' => redirect('/')
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
