@@ -15,3 +15,7 @@ O Sistema permite que um usuário autenticado, crie postagens e faça comentári
 **Regras de Negócio:**
 
 Além das validações dos campos, para não permitir cadastro de informações em branco, um usuário apenas pode editar e excluir as suas postagens.
+
+**Aplicativo hospedado no Heroku**
+
+[Blog RoR](https://thawing-brushlands-1640.herokuapp.com)
