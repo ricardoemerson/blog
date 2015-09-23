@@ -1,0 +1,7 @@
+Comment.create(:id => 9, :content => "Excelente trabalho.", :user_id => 2, :post_id => 12)
+Comment.create(:id => 6, :content => "O Rails está na versão 4.2.1", :user_id => 1, :post_id => 8)
+Comment.create(:id => 5, :content => "Vou dar uma estudada", :user_id => 2, :post_id => 2)
+Comment.create(:id => 4, :content => "Blza pura", :user_id => 2, :post_id => 5)
+Comment.create(:id => 3, :content => "É verdade Ricardo...", :user_id => 2, :post_id => 11)
+Comment.create(:id => 2, :content => "Awesome post", :user_id => 1, :post_id => 11)
+Comment.create(:id => 1, :content => "Excelente post", :user_id => 1, :post_id => 11)
