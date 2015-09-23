@@ -1,0 +1,349 @@
+
+---
+users:
+  columns:
+  - id
+  - full_name
+  - location
+  - bio
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - RICARDO EMERSON
+    - RIO BRANCO
+    - "Iusto ex per tempore auctor proident tenetur tempore quaerat quas. Repellat
+      posuere facilisi sodales. Aperiam ac venenatis nullam! Hac, tortor malesuada,
+      curabitur nostra eius, metus erat class consequuntur? Dolorum dignissimos neque
+      duis, pharetra ac curae architecto quas veritatis sagittis nec nec conubia ab
+      pede fames, itaque officiis quidem, placerat porro harum cursus parturient vulputate
+      hymenaeos asperiores cras? Dolore vitae auctor est. Quasi harum mi minus magni,
+      nisl est! Laboris numquam! Fermentum donec tenetur commodi doloremque tenetur
+      nobis deserunt bibendum class excepteur. Elementum sollicitudin dicta mi beatae
+      sociosqu, autem. Conubia, quo ex? Ipsa! Lacinia earum, quod deserunt, porro
+      adipisicing, architecto occaecati.\r\n\r\nNobis numquam. Hic, aliquip occaecat
+      quidem. Nulla mus enim senectus donec vitae, torquent illo, ac hic eu felis
+      eligendi lorem urna tempore, porttitor sit. Optio do pariatur porro sodales
+      netus rem bibendum pharetra voluptatibus lacinia proident? Cillum. Recusandae
+      exercitation, netus, ultricies ratione lacus soluta ullam, vivamus earum! Magna,
+      accusantium curabitur gravida eos. Ullamco vivamus, nunc vivamus, harum quo
+      adipisicing nisi mollit expedita error delectus. Quisque perferendis minima.
+      Occaecati eget ridiculus possimus velit! Luctus malesuada sem? Fugit iste proident!
+      Tristique proident quos habitasse iste mi condimentum, doloremque dictumst,
+      dolores primis, consectetuer! Wisi curabitur facilisi itaque, voluptates magnam.
+      Eius vel? Tenetur pulvinar.\r\n\r\nRidiculus nobis illo consequuntur eos pharetra.
+      Possimus vulputate, suspendisse dui, alias platea, iusto. Mus voluptatem luctus
+      alias, habitant, aliquid nihil. Unde hac vel sit! Commodo illo dolor morbi augue
+      porro montes repellendus tincidunt class, quo rerum, imperdiet facilisi, venenatis
+      cum tincidunt, ut expedita in eros sit sit blandit eiusmod ornare assumenda
+      aliquet parturient turpis, rhoncus ante bibendum, sapien nesciunt, at, praesent
+      leo phasellus pharetra! Etiam, dolorum, laborum, condimentum diam iaculis sit
+      lectus! Numquam viverra incidunt deserunt sem elementum! Reiciendis lectus!
+      Nesciunt cubilia, facilisi sodales, lobortis facilisi iure etiam augue, porttitor
+      cum ac? Nisi sodales sollicitudin minim fugiat voluptas! Nemo laborum."
+    - ricardo_emerson@yahoo.com.br
+    - "$2a$10$QOa23rJ1zKPx6Tm3MNJzseLSCZa5qmurjhHP9B9.sPkXeDZZo0bYG"
+    - 28c464c749bb583cc44a67319c27db6e64d0af4edc6d8707f46db6ef3b4c6608
+    - '2015-08-25 05:09:36.911240'
+    - 
+    - 21
+    - '2015-08-25 05:04:39.754999'
+    - '2015-08-25 04:52:01.021398'
+    - "::1"
+    - "::1"
+    - '2015-06-03 02:24:53.624847'
+    - '2015-08-25 05:09:36.917867'
+  - - 2
+    - WILLIAN RAMON
+    - RIO BRANCO
+    - GRANDE RAMONES
+    - barbosabessa@gmail.com
+    - "$2a$10$5Zx5lUXm4Kb0lKdccsyolOenf6zRTW2V4lm2e.Nxh/UV1v9vmqclu"
+    - 
+    - 
+    - 
+    - 3
+    - '2015-08-25 04:50:00.203918'
+    - '2015-06-04 04:31:16.525807'
+    - "::1"
+    - 187.4.138.147
+    - '2015-06-03 05:42:10.083166'
+    - '2015-08-25 04:50:00.210548'
+  - - 3
+    - Paulo Henrique
+    - Rio Branco
+    - ''
+    - pauloph47@gmail.com
+    - "$2a$10$9wkrmR.xY840.HohcqvNS.wU4pL4hUzfUUSkkZenertfxcaD83quK"
+    - 
+    - 
+    - 
+    - 1
+    - '2015-06-04 21:05:45.538460'
+    - '2015-06-04 21:05:45.538460'
+    - 179.234.74.44
+    - 179.234.74.44
+    - '2015-06-04 21:05:45.518359'
+    - '2015-06-04 21:05:45.542827'
+
+---
+posts:
+  columns:
+  - id
+  - title
+  - content
+  - user_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - RUBY ON RAILS É UMA OPÇÃO PARA INICIANTES EM DESENVOLVIMENTO WEB
+    - "São Paulo - Os desenvolvedores em começo de carreira que desejam progredir
+      rápido podem  encontrar um ótimo atalho na plataforma Ruby on Rails.\r\n\r\nSegundo
+      especialistas, há um motivo forte para isso: a tecnologia é muito fácil de aprender
+      e usar. Desse modo, os desenvolvedores podem dominá-la após um período curto
+      de estudos e começar a ganhar dinheiro com o novo conhecimento . “O Ruby é simples
+      mesmo para quem nunca criou uma aplicação”, diz Joseane Bezerra, engenheira
+      de software da consultoria Liferay Brasil.\r\n\r\nO desenvolvedor, explica Joseane,
+      também encontra no Ruby on Rails um ambiente muito amigável para produzir. “A
+      tecnologia oferece vários modelos de códigos. Com isso, o profissional pode
+      usá-los, fazer pequenas adaptações e produzir com rapidez caso esteja criando
+      algo novo”, diz.\r\n\r\nA tecnologia é uma boa opção para trabalhar no aquecido
+      mercado de manutenção de sites. “O especialista em Ruby on Rails consegue decifrar
+      com facilidade o código escrito por outro desenvolvedor. Portanto, não encontra
+      grandes desafios para consertar ou melhorar um código web”, afirma Joseane.\r\n\r\nAproveitamento
+      - O Ruby on Rails inclui princípios como DRY (sigla de “não se repita”, em tradução
+      livre do inglês) e incentiva o reuso de um mesmo trecho de código. “Há também
+      um modelo de desenvolvimento que busca diminuir o número de decisões que um
+      código deve tomar”, diz "
+    - 1
+    - '2015-06-03 04:31:31.658246'
+    - '2015-06-03 04:31:31.658246'
+  - - 2
+    - Rails 4 lançado hoje!
+    - "Como já devem ter visto o Rails 4.0 foi finalmente lançado hoje depois de um
+      longo período de desenvolvimento. Para se ter uma idéia o primeiro beta do 4.0
+      foi lançado em fevereiro deste ano e a série 3.2.0 (que atualmente está na 3.2.13),
+      foi lançado em Janeiro do ano passado. Portanto estamos falando de um ano e
+      meio entre duas séries estáveis.\r\n\r\nAntes de mais nada fica as mesmas recomendações
+      de sempre:\r\n\r\n    se você não sabe se deve usar o Rails 4, melhor permanecer
+      na versão 3.2.13, mesmo para projeto novos. Isso porque muitas gems ainda não
+      são compatíveis com a nova versão e deve levar alguns meses para que a maioria
+      das principais gems se estabilizem.\r\n    se estiver numa versão muito antiga
+      de Rails, lembre-se que a série 2.3 está em fim de vida, ou seja não terá mais
+      suporte sequer para atualizações de segurança então você deve migrar para as
+      séries mais novas. Mas nunca pule direto pra 3.2.13, vá versão em versão como
+      já expliquei neste outro post.\r\n    quem está acostumado a lidar com cutting
+      edge já pode ir e começar a colaborar para ajudar a encontrar os problemas de
+      compatibilidade. Basicamente prepare-se para uma Gemfile cheia de apontamentos
+      direto para o repositório git de cada gem.\r\n"
+    - 1
+    - '2015-06-03 04:53:02.438785'
+    - '2015-06-03 04:53:02.438785'
+  - - 3
+    - 8 motivos para estudar Ruby On Rails
+    - "\r\n\r\nVenho aqui em mais um post falar sobre meus poucos, porém produtivos
+      momentos que tive ao desenvolver utilizando a tecnologia web: Ruby On Rails.\r\n\r\nE
+      isso me motivou a citar em minha opinião 8 motivos, pelo qual espero que você
+      leitor, programador, se motive a aprender um pouco mais sobre essa linguagem
+      e framework, que cada vez mais conquista novos desenvolvedores e startups.\r\n\r\n
+      \   1) DRY - Don't Repeat Yourself (Não fique repetindo): A idéia por traz deste
+      conceito no Rails, é a de proporcionar ao programador métodos que abstraia ao
+      máximo todo o desenvolvimento do projeto, e isso segue desde a modelagem dos
+      objetos até a preparação das views, pois já existe pronto determinados métodos
+      que resolvam os clássicos problemas de duplicidade de código, por isso, caso
+      perceba a existência de um código redundante, procure investigar se não há uma
+      nova e melhor forma de resolvê-lo.\r\n    2) CoC - Convention over Configuration
+      (Convenção acima de Configuração): A melhor forma de programar em Ruby On Rails
+      é estudando bastante todas as suas técnicas para seguir rigorosamente seus \"padrões
+      de sucesso\", pois ele foi projetado para não gastarmos tempo configurando todo
+      o ambiente do projeto.\r\n    3) Comunidade ativa: Conheço muitos programadores,
+      principalmente do Java, estão migrando para Ruby, e isso traz mais credibilidade
+      a esta plataforma por que Ruby On Rails é open-source, e isso significa que
+      neste mundo, alguém irá te ajudar a resolver um probleminha que já foi resolvido
+      por outros ou que sempre existirá um colaborador contribuindo na manuntenção
+      e inovação deste framework.\r\n    4) Agilidade: Ruby On Rails segue fielmente
+      a maioria dos conceitos do desenvolvimento Agile, TDD, BDD e DDD, conhecer e
+      seguir esses conceitos permitirá um desenvolvimento rápido do software e com
+      qualidade garantida.\r\n    5) Foco no negócio: ao criar um projeto, 90% do
+      tempo será investido fazendo o que mais agrega valor ao sistema, que são as
+      regras de negócio, layout, usabilidade, modelagem e testes, os outros 10% serão
+      gastos configurando algumas bibliotecas (GEMs) ou estudando novas técnicas para
+      aperfeiçoar o projeto.\r\n    6) A favorita das startups: Muitas das startups
+      estão adotando Rails em alguns dos seus projetos, pois permite a eles se empenharem
+      no que mais almejam, que é inovar em seus projeto, desenvolvendo-o em curto
+      prazo.\r\n    7) Problemas grandes, soluções pequenas: Diferente das \"linguagens
+      clássicas\" (Java, C#, C++, PHP) Ruby possui uma sintaxe simplista e muitos
+      métodos poderosos que facilitam muito a vida do programador. Existem problemas
+      que levariam mais de 20 linhas de código em uma \"linguagem clássica\" sendo
+      resumido em 3 linhas usando Ruby.\r\n    8) O mundo esta usando Ruby On Rails:
+      Existem muitas aplicações web famosas adotando Rails: Twitter, 37Signals, GitHub,
+      Hungroo, e muito mais clicando aqui.\r\n\r\nEnfim, espero que este post lhe-motive
+      a estudar não só Ruby, mas sempre que puder uma nova linguagem de programação,
+      pois o intuito aqui não é dizer que Ruby On Rails será o mundo perfeito, tanto
+      é que apenas citei um pouco sobre minhas experiências com este framework, e
+      sempre é bom conhecer novos paradigmas de programação, pois permitirá resolver
+      com sabedoria os problemas que enfrentamos ao desenvolver um projeto.\r\n\r\nCaso
+      saiba outros motivos para aprender Ruby On Rails, comentem esse post!\r\n"
+    - 1
+    - '2015-06-03 04:58:05.421756'
+    - '2015-06-03 04:58:05.421756'
+  - - 5
+    - Ruby e Rails no Ubuntu 14.04 LTS Trusty Tahr
+    - "Quase 2 anos atrás fiz um artigo que teve muitos leitores sobre instalar Ruby
+      no Ubuntu 12.04 LTS. Inclusive era o que eu estava usando até agora como ambiente
+      de desenvolvimento no Vagrant. O bom é que dá pra desenvolver tudo sem problema
+      algum nesse ambiente e é bem estável, mas resolvi atualizar o mesmo artigo para
+      instalar no último Long Term Support do Ubuntu, o 14.04 LTS Trusty Tahr.\r\n\r\nPara
+      VPS pequenos, eu particularmente não me incomodo de usar RVM em single-user
+      mode com Nginx+Passenger. Em particular eu instalo esse ambiente num Vagrant,
+      então se for esse o caso, depois de instalar o Vagrant, "
+    - 2
+    - '2015-06-03 05:44:42.211339'
+    - '2015-06-03 05:44:42.211339'
+  - - 6
+    - 'Configurando Ruby, Rails, MySQL, PostgreSQL e Git no Mac OS X '
+    - "Uma dúvida muito comum é sobre como configurar ambiente de desenvolvimento.
+      Neste artigo irei mostrar como configurar o Mac OS X 10.10 Yosemite com Ruby,
+      Rails, MySQL, PostgreSQL e Git.\r\n\r\nInstalando o XCode\r\nAntes de mais nada,
+      você vai precisar instalar o XCode, disponível na App Store gratuitamente.\r\n\r\nDepois
+      de instalá-lo, você vai precisar instalar também o Command-Line Tools. Abra
+      o terminal, disponível em /Applications/Utilities/Terminal.app e digite o comando
+      à seguir."
+    - 1
+    - '2015-06-03 15:42:43.989493'
+    - '2015-06-03 15:42:43.989493'
+  - - 7
+    - 'Configurando Ruby, Rails, MySQL, PostgreSQL e Git no Ubuntu '
+    - Se você quer desenvolver com ruby e quer saber como configurar o seu Ubuntu,
+      este artigo é para você. Nele irei mostrar como configurar Ruby, Rails, MySQL,
+      PostgreSQL e Git em um Ubuntu Desktop 15.10.
+    - 1
+    - '2015-06-03 15:43:29.579158'
+    - '2015-06-03 15:43:29.579158'
+  - - 8
+    - Ruby 2.2.2 Released
+    - "We are pleased to announce the release of Ruby 2.2.2. This is a TEENY version
+      release of the stable 2.2 series.\r\n\r\nThis release includes the security
+      fix for a OpenSSL extension’s hostname verification vulnerability.\r\n\r\n    CVE-2015-1855:
+      Ruby OpenSSL Hostname Verification\r\n\r\nThere are also some bugfixes. See
+      ChangeLog for details."
+    - 1
+    - '2015-06-03 21:27:48.760297'
+    - '2015-06-03 21:27:48.760297'
+  - - 9
+    - 'Raptor: A Forthcoming Ruby Web Server for Faster App Deployment'
+    - Raptor bills itself as a new Ruby "app server” and it claims to blow everything
+      else out of the water performance-wise (by between 2-4x!) whether that’s Unicorn,
+      Puma, Passenger, or even TorqueBox on JRuby. The bad news for now is there’s
+      no source or repo yet and only a handful of people (including me) have been
+      given a sneak peek, although a public beta is promised on November 25th.
+    - 1
+    - '2015-06-03 21:32:39.898455'
+    - '2015-06-03 21:32:39.898455'
+  - - 10
+    - Ruby’s Unary Operators and How to Redefine Their Functionality
+    - "In math, a unary operation is an operation with a single input. In Ruby, a
+      unary operator is an operator which only takes a single ‘argument’ in the form
+      of a receiver. For example, the – on -5 or ! on !true.\r\n\r\nIn contrast, a
+      binary operator, such as in 2 + 3, deals with two arguments. Here, 2 and 3 (which
+      become one receiver and one argument in a method call to +).\r\n\r\nRuby only
+      has a handful of unary operators, and while it’s common to redefine binary operators
+      like + or [] to give your objects some added syntactic sugar, unary operators
+      are less commonly redefined. "
+    - 1
+    - '2015-06-03 21:33:52.755553'
+    - '2015-06-03 21:33:52.755553'
+  - - 11
+    - 'The Last Week in Ruby: A Great Ruby Shirt, RSpec Team Changes and a Sneaky
+      Segfault Trick'
+    - "Welcome to this week's roundup of Ruby news cobbled together from my e-mail
+      newsletter, Ruby Weekly.\r\n\r\nHighlights include: A time-limited Ruby shirt
+      you can order, a major change in the RSpec project, how to make Ruby 1.9.3 a
+      lot faster with a patch and compiler flags, a sneaky segmentation fault trick,
+      several videos, and a few great jobs."
+    - 1
+    - '2015-06-03 21:34:49.744686'
+    - '2015-06-03 21:34:49.744686'
+  - - 12
+    - Trabalho da disciplina Programação Web - Parte B (Ruby) do curso de Especialização
+      em Desenvolvimento de Software e Infraestrutura para Internet
+    - "Este Blog é um exemplo de uma aplicação desenvolvida utilizando a linguagem
+      de programação Ruby, juntamente com o framework Rails para desenvolvimento de
+      aplicações Web.\r\n\r\nNo aplicativo estão sendo utilizados vários plugins,
+      onde  dentre eles podemos destacar:\r\n- Semantic-UI - Front-End CSS e Javascript;\r\n-
+      Devise - Devise controle de gestão de usuários;\r\n- Slim - Template mais enxuto
+      que o ERB;\r\n- Simple Form - Mais opções para trabalhar com formulários;\r\n-
+      Kaminari - Controle de paginação\r\n\r\nO Sistema permite que um usuário autenticado,
+      crie postagens e faça comentários nas diversas postagens existentes.\r\n\r\nRegras
+      de Negócio:\r\nAlém das validações dos campos, para não permitir cadastro de
+      informações em branco, um usuário apenas pode editar e excluir as suas postagens.
+      Para o usuário não cadastrado no sistema, o mesmo pode apenas ler as postagens
+      e visualizar os comentários.\r\n\r\nAluno:\r\n#   RICARDO EMERSON DE FREITAS
+      JARDIM\r\n"
+    - 1
+    - '2015-06-04 05:09:00.596244'
+    - '2015-08-25 04:52:26.423713'
+
+---
+comments:
+  columns:
+  - id
+  - content
+  - user_id
+  - post_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Excelente post
+    - 1
+    - 11
+    - '2015-06-04 04:03:51.166824'
+    - '2015-06-04 04:17:57.676949'
+  - - 2
+    - Awesome post
+    - 1
+    - 11
+    - '2015-06-04 04:18:27.000550'
+    - '2015-06-04 04:18:27.000550'
+  - - 3
+    - "É verdade Ricardo..."
+    - 2
+    - 11
+    - '2015-06-04 04:31:36.498875'
+    - '2015-06-04 04:31:36.498875'
+  - - 4
+    - Blza pura
+    - 2
+    - 5
+    - '2015-06-04 04:56:47.957629'
+    - '2015-06-04 04:56:47.957629'
+  - - 5
+    - Vou dar uma estudada
+    - 2
+    - 2
+    - '2015-06-04 04:59:18.675547'
+    - '2015-06-04 04:59:18.675547'
+  - - 6
+    - O Rails está na versão 4.2.1
+    - 1
+    - 8
+    - '2015-06-04 19:33:24.517774'
+    - '2015-06-04 19:33:24.517774'
+  - - 9
+    - Excelente trabalho.
+    - 2
+    - 12
+    - '2015-08-25 04:50:53.981991'
+    - '2015-08-25 04:50:53.981991'
