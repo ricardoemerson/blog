@@ -1,4 +1,4 @@
-## Trabalho da disciplina Programação Web - Parte B (Ruby) do curso de Especialização em Desenvolvimento de Software e Infraestrutura para Internet
+## Trabalho da disciplina Programação Web - (Ruby) do curso de Especialização em Desenvolvimento de Software para Internet realizado na Universidade Federal do Acre - UFAC.
 
 Este Blog é um exemplo de uma aplicação desenvolvida utilizando a linguagem de programação Ruby, juntamente com o framework Rails para desenvolvimento de aplicações Web.
 
