@@ -3,8 +3,11 @@ class CommentsController < ApplicationController
   # POST /comments.json
   def create
     @post = Post.find(params[:post_id])
-    @comment = @post.comments.create(comment_params)
-    redirect_to post_path(@post), notice: 'Commentário cadastrado com sucesso.'
+    if @comment = @post.comments.create(comment_params)
+      redirect_to post_path(@post), notice: 'Commentário cadastrado com sucesso.'
+    else
+      redirect_to post_path(@post), notice: 'Não foi possível inserir o seu comentário. Verifique se o mesmo está em branco.'
+    end
   end
 
   private

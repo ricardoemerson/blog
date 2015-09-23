@@ -15,6 +15,13 @@ $(document).ready ->
         prompt: "Por favor, preencha este campo."
       ]
 
+    comment_content:
+      identifier: "comment_content"
+      rules: [
+        type: "empty"
+        prompt: "Por favor, preencha este campo."
+      ]
+
   # Define os ajustes de comportamento das regras.
   settings =
     inline: true
@@ -24,6 +31,6 @@ $(document).ready ->
       return
 
   # Faz a validação dos dados do formulário.
-  $(".new_post, .edit_post").form formValidations, settings
+  $(".new_post, .edit_post, .new_comment").form formValidations, settings
 
   return

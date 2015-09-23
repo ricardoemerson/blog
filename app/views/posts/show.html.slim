@@ -1,5 +1,6 @@
 #posts-container
   .ui.blue.raised.segment.shadow
+    = render '/layouts/dimmer_loading'
     h3.ui.dividing.header Consultar Postagem
     = semantic_flash
 
@@ -36,4 +37,3 @@
     - else
       .form-actions
         = link_to 'Página Principal', root_path, class: 'ui button'
-
