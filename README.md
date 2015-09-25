@@ -18,4 +18,4 @@ Além das validações dos campos, para não permitir cadastro de informações 
 
 **Aplicativo hospedado no Heroku**
 
-[Blog RoR](https://thawing-brushlands-1640.herokuapp.com)
+[Blog RoR](https://sharing-knowledge.herokuapp.com/)
